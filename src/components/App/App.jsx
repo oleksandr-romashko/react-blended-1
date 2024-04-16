@@ -8,6 +8,9 @@ import {
   CryptoHistory,
 } from 'components';
 
+import article from "data/article.json";
+
+
 export const App = () => {
   return (
     <Section>
@@ -15,7 +18,10 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
-        <BlogCard />
+        <BlogCard
+          key={article._id}
+          {...article}
+        />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
