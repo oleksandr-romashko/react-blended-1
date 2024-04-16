@@ -13,6 +13,11 @@ export const theme = Object.freeze({
     medium: '18px',
     large: '22px',
   },
+  iconSizes: {
+    small: '14px',
+    medium: '16px',
+    large: '24px',
+  },
   spacing: value => `${4 * value}px`,
   shadows: {
     small: '0 5px 7px -1px rgba(51, 51, 51, 0.23)',
